@@ -83973,7 +83973,7 @@ return A.N($async$qn,r)},
 yl(a,b){return this.ajR(a,b)},
 ajR(a,b){var s=0,r=A.O(t.H),q=this,p,o,n
 var $async$yl=A.P(function(c,d){if(c===1)return A.L(d,r)
-for(;;)switch(s){case 0:p=A.fm("http://192.168.7.107:8000/api/mileage/")
+for(;;)switch(s){case 0:p=A.fm("/api/mileage/")
 o=t.N
 n=A.aq(["Content-Type","application/json; charset=UTF-8"],o,o)
 s=2
@@ -83985,7 +83985,7 @@ qO(){var s=0,r=A.O(t.j),q,p,o
 var $async$qO=A.P(function(a,b){if(a===1)return A.L(b,r)
 for(;;)switch(s){case 0:p=t.N
 s=3
-return A.K(A.aOW(A.fm("http://192.168.7.107:8000/api/mileage"),A.aq(["Content-Type","application/json"],p,p)),$async$qO)
+return A.K(A.aOW(A.fm("/api/mileage"),A.aq(["Content-Type","application/json"],p,p)),$async$qO)
 case 3:o=b
 if(o.b===200){q=B.cW.TR(A.aOG(A.aMB(o.e)).fN(o.w),null)
 s=1

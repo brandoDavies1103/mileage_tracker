@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<void> createPost(String image, int mileage) async {
     final response = await http.post(
-      Uri.parse('http://192.168.7.107:8000/api/mileage/'),
+      Uri.parse('/api/mileage/'),
       headers: {'Content-Type': 'application/json; charset=UTF-8'},
       body: jsonEncode({'image_b64': image, 'mileage': mileage}),
     );
@@ -121,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<List<dynamic>> getMileageEntries() async {
     final response = await http.get(
-      Uri.parse('http://192.168.7.107:8000/api/mileage'),
+      Uri.parse('/api/mileage'),
       headers: {'Content-Type': 'application/json'},
     );
 
